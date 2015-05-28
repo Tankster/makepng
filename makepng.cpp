@@ -2,7 +2,6 @@
 //
 
 #include <iostream>
-#include <Windows.h>
 #include "opencv2\opencv.hpp"
 
 using namespace std;
@@ -16,8 +15,8 @@ int main(int argc, char* argv[])
 	
 	//Settings for saving PNG images. use Max compression
 	vector<int> compr_params;
-    compr_params.push_back(CV_IMWRITE_PNG_COMPRESSION);
-    compr_params.push_back(9);
+	compr_params.push_back(CV_IMWRITE_PNG_COMPRESSION);
+	compr_params.push_back(9);
 
 	//Go through all files in argv[]
 	for (int i = 1; i < argc; i++)
